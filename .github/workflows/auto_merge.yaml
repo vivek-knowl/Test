@@ -16,6 +16,6 @@ jobs:
           fetch-depth: 0
 
       - name: Auto-Merge
-        uses: knowl-doc/auto-merge@main 
+        uses: knowl-doc/auto-merge@test_staging
         with:
           KNOWL_API_KEY: ${{ secrets.KNOWL_API_KEY }} 
