@@ -1,10 +1,24 @@
-def get_digit(num):
-    return num%10
+def add(x, y):
+    return x + y
 
-num = 10123421
+def subtract(x, y):
+    return x - y
 
-while(num):
-    print(get_digit(num), end=' ')
-    num //= 10
+def multiply(x, y):
+    return x * y
 
+def divide(x, y):
+    if y == 0:
+        return "Error: Cannot divide by zero"
+    return x / y
 
+print("Select operation:")
+print("1. Add")
+print("2. Subtract")
+print("3. Multiply")
+print("4. Divide")
+
+while True:
+    choice = input("Enter choice (1/2/3/4): ")
+
+    if choice in ('1', '2', '3', '4'):
